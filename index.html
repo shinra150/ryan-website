@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-us">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Ryan's website</title>
@@ -10,15 +10,14 @@
             max-width: 1500px;
             margin: 2em auto;
             font: 26px Arial, Helvetica, sans-serif;
-    
-            
         }
 
         .container {
             display: grid;
             grid-template-columns: repeat(16, minmax(0,1fr));
-            grid-template-rows:repeat(12, 0.1fr);
+            /*grid-template-rows: repeat(12, 0.1fr);*/
             gap: 15px;
+            /*background: url(images/background.jpg);*/
         }
 
         header {
@@ -52,73 +51,166 @@
         }
 
         header {
-        grid-column: 1 / 3;
-        grid-row: 1;
-        font-size: larger;
-        font-weight: 800;
+            grid-column: 2 / 4;
+            grid-row: 1;
+            font-size: larger;
+            font-weight: 800;
         }
 
         article {
-        grid-column: 2 / 7;
-        grid-row: 2;
-         font-size: larger;
-         text-align: right;
+            grid-column: 2 / 7;
+            grid-row: 2;
+            font-size: larger;
+            text-align: right;
         }
 
+            article a {
+                text-decoration: none;
+                color: #333;
+            }
+
+
         aside {
-        grid-column: 11 / 16;
-        grid-row: 2;
+            grid-column: 11 / 16;
+            grid-row: 2;
         }
 
         footer {
-        grid-column: 15 / 16;
-        grid-row: 1;
-         font-size: larger;
-        font-weight: 800;
+            grid-column: 14 / 16;
+            grid-row: 1;
+            font-size: larger;
+            font-weight: 800;
         }
 
-    </style>
-  </head>
+        .ul-left {
+            padding-top: 100px;
+        }
 
+            .ul-left li {
+                /*float: left;*/
+                width: 390px;
+                padding: 10px 10px;
+                /*border: 1px solid #ccc;*/
+                /*background: #1e82ff;*/
+                text-align: right;
+                list-style: none;
+            }
+
+     
+        #home {
+            color: #000000;
+            cursor: pointer;
+        }
+
+
+        .ul-left li:active {
+            color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        .ul-left li:hover {
+            color: black;
+            cursor: pointer;
+        }
+
+        .ul-right {
+            padding: 100px 0px 0px 500px;
+        }
+
+            .ul-right li {
+                /*float: left;*/
+                width: 200px;
+                padding: 60px 0px 55px 0px;
+                /*border: 1px solid #ccc;*/
+                /*background: #1e82ff;*/
+                text-align: left;
+                list-style: none;
+            }
+
+
+
+    </style>
+    <script type="text/javascript">
+        function Show(url) {
+            window.location.href = url;
+        }
+        function mouseover() {
+
+            document.getElementById("home").style.color = "#f0f0f0";
+        }
+        function mouseout() {
+
+            document.getElementById("home").style.color = "#000000";
+        }
+
+    </script>
+</head>
 <body>
-   
+
     <div class="container">
         <header>HOME</header>
-        <article>
-            
-                <p align="right">Aroma</p>
-                <p align="right">Far District</p>
-                <p align="right">文字中的“垃圾”</p>
-                <a href="page1.html" style="left: 500px;">查漏补缺</a>
-                <p align="right">方河体</p>
-                <p align="right">photography&cover design</p>
-                <p align="right">adidas_with you</p>
-                <p align="right">漂流盒子</p>
-                <p align="right">WHAT ARE YOU LOOKING FOR</p>
-                <p align="right">医疗系带</p>
-                <p align="right">光盘的代价</p>
-                <p align="right">816重生计划</p>
-                <p align="right">1:100</p>
-        </article>
-               
-        <aside>
-                <br>
-                <br>
-                <p>2019</p>
-                <br>
-                <p>2020</p>
-                <br>
-                <p>2021</p>
-                <br>
-                <p>2022</p>
-                <br>
-                <p>2023</p>
-        </aside>
+        <!--<div id="home" style="height:800px;overflow-y:auto ;width:600px;margin-top:100px;">-->
+
+        <div id="home" onmouseover="mouseover()" onmouseout="mouseout()">
+            <ul class="ul-left">
+                <li id="l1">Aroma</li>
+                <li id="l2">Far District</li>
+                <li id="l3">文字中的“垃圾”</li>
+                <li id="l4" onclick="Show('page1.html')"><span>查漏补缺</span></li>
+                <li id="l5">方河体</li>
+                <li id="l6">photography&cover design</li>
+                <li id="l7">adidas_with you</li>
+                <li id="l8">漂流盒子</li>
+                <li id="l9">WHAT ARE YOU LOOKING FOR</li>
+                <li id="l10">医疗系带</li>
+                <li id="l11">光盘的代价</li>
+                <li id="l12">816重生计划</li>
+                <li id="l13">1:100</li>
+            </ul>
+        </div>
+        <div style="background-image: url('images/bg.png'); width: 100px; height: 800px; margin-left: 400px; background-size: cover; background-size: 100% 100%; background-repeat: no-repeat; padding:80px 0px 0px 0px;"></div>
+        <!--<div style="height: 800px; overflow-y: auto; width: 400px; margin-left: 400px; position: relative; margin-top:100px;">-->
+
+        <ul class="ul-right">
+            <li>2019</li>
+            <li>2020</li>
+            <li>2021</li>
+            <li>2022</li>
+            <li>2023</li>
+        </ul>
+        <!--<article>
+            <p align="right">Aroma</p>
+            <p align="right">Far District</p>
+            <p align="right">文字中的“垃圾”</p>
+            <a href="#">查漏补缺</a>
+            <p align="right">方河体</p>
+            <p align="right">photography&cover design</p>
+            <p align="right">adidas_with you</p>
+            <p align="right">漂流盒子</p>
+            <p align="right">WHAT ARE YOU LOOKING FOR</p>
+            <p align="right">医疗系带</p>
+            <p align="right">光盘的代价</p>
+            <p align="right">816重生计划</p>
+            <p align="right">1:100</p>
+        </article>-->
+        <!--<aside>
+            <br>
+            <br>
+            <p>2019</p>
+            <br>
+            <p>2020</p>
+            <br>
+            <p>2021</p>
+            <br>
+            <p>2022</p>
+            <br>
+            <p>2023</p>
+        </aside>-->
         <footer>ABOUT</footer>
     </div>
 
-
-    <img width="100%" height="100%"src="images/background.jpg"style="position:absolute;left:0;top:0;z-index:-1;/">
+    <!--<img width="100%" height="100%" src="images/background.jpg" style="position:absolute;left:0;top:0;z-index:-1;/">-->
+    <!--</div>-->
+    <iframe id="if_content" width="100%" height="900px" style="display:none;align-content:center;border:none;"></iframe>
 </body>
-
 </html>
