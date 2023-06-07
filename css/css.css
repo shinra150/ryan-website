@@ -13,9 +13,9 @@
 .time {
     left: 40px;
     position: relative;
-    top: -900px;
+    top: 50px;
     z-index: -99;
-    width: 300px;
+    width: 200px;
 }
 
 .item h5 {
@@ -106,9 +106,13 @@
 }
 
 .center {
-    position: relative;
+    /*position: relative;
     left: 1200px;
     top: -1400px;
+    width: 600px;*/
+    position: relative;
+        left: 65%;
+    top: -200px;
     width: 600px;
 }
 
@@ -148,3 +152,28 @@ a:active {
     text-decoration: none;
     color: #000000;
 }
+
+
+ .left-group{
+            width: 48%;
+            text-align: center;
+        }
+        .right-group {
+            width: 30%;
+            z-index:-99;
+        }
+/**/
+        .mid-group {
+            flex: 1;
+            text-align: center;
+            background: url(../image/center_line.png) repeat-y 0px 0;
+    overflow: hidden;
+    width: 10px;
+    position: relative;
+            height: 1000px;
+        }
+        .container {
+            position: absolute;
+            width: 100%;
+            display: flex;
+        }
