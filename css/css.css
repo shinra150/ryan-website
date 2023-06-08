@@ -1,8 +1,8 @@
-﻿body {
-            width: 90%;
-            max-width: 1500px;
-            margin: 2em auto;
-            font: 26px Arial, Helvetica, sans-serif;
+body {
+    width: 90%;
+    max-width: 1500px;
+    margin: 2em auto;
+    font: 26px Arial, Helvetica, sans-serif;
 }
 
 
@@ -100,9 +100,18 @@
 
 .cover {
     position: relative;
-    left: 50px;
-    float:right
+    /*left: 50px;*/
+    /*text-align: right;*/
+    width: 300px;
+    height: 400px;
 }
+    .cover img {
+    
+    /*display:inline;*/
+    float:right;
+    width:90%;
+    height:90%;
+    }
 
 .desc {
     font: 20px Arial, Helvetica, sans-serif;
@@ -149,7 +158,7 @@ a:active {
 }
 
 .right-group {
-    width: 30%;
+    width: 50%;
 }
 /**/
 .mid-group {
