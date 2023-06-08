@@ -101,6 +101,7 @@
 .cover {
     position: relative;
     left: 50px;
+    float:right
 }
 
 .desc {
