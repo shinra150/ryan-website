@@ -114,20 +114,21 @@ body {
     }
 
 .desc {
-    font: 20px Arial, Helvetica, sans-serif;
+    font: 15px Arial, Helvetica, sans-serif;
     left: 0;
     margin: -20px 0 0 0;
+    text-align: left;
 }
 
 .title {
     position: relative;
-    text-align: right;
+    text-align: left;
 }
 
 .category {
         font: 15px Arial, Helvetica, sans-serif;
     position: relative;
-    text-align: right;
+    text-align: left;
 }
 
 
