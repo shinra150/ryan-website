@@ -19,6 +19,7 @@ body {
     position: relative;
     margin-bottom: 50px;
     margin-top: 80px;
+    color:grey;
 }
 
 .curr_item h3 {
@@ -27,16 +28,19 @@ body {
     margin-bottom: 50px;
     margin-top: 80px;
     width: 300px;
+    color:grey;
 }
 
 .item h5 span {
     left: 30px;
     position: relative;
+    color:grey;
 }
 
 .curr_item h3 span {
     left: 50px;
     position: relative;
+    color:grey;
 }
 
 .others {
@@ -62,6 +66,7 @@ body {
     left: 100px;
     position: relative;
     list-style: none;
+    
 }
 
     .curr_item_day span {
